@@ -11,7 +11,7 @@ function jumlah(a, b) {
     return a + b;
 };
 
-var kurng(a, b) {
+function kurang(a, b) {
     return a - b;
 };
 

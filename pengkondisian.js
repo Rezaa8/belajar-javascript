@@ -9,8 +9,6 @@ if(x % 2 == 0) {
     alert("Its not a number");
 }
 
-if(confirm("Apakah Kamu Manusia?"))  {
-    location = "https://google.com";
-} else{
-    alert("Kamu Bego");
+if(confirm("Apakah Kamu Manusia?")); {
+    
 }

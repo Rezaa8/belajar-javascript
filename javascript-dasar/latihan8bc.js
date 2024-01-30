@@ -3,8 +3,15 @@ var pilihanComputer = Math.random();
 
 
 if (!["gajah", "orang", "semut"].includes(pilihanUser)) {
-    alert("Pilihan Anda tidak valid. Silakan pilih gajah, orang, atau semut.");
-  }
+  alert("Pilihan Anda tidak valid. Silakan pilih gajah, orang, atau semut.");{
+    setTimeout(() => {
+      
+    }, timeout);
+    
+  } 
+}
+  
+
 
 
 if (pilihanComputer < 0.34) {
@@ -17,13 +24,13 @@ pilihanComputer = "semut";
 
 
 if (pilihanUser === "gajah" && pilihanComputer === "orang") {
-    alert("Anda menang! komputer memilih :" + pilihanComputer);
+    alert("Anda menang! komputer memilih :" + pilihanComputer + "\n Kamu memilih :" + pilihanUser);
   } else if (pilihanUser === "semut" && pilihanComputer === "gajah") {
-    alert("Anda menang! komputer memilih :" + pilihanComputer);
+    alert("Anda menang! komputer memilih :" + pilihanComputer + "\nKamu memilih :" + pilihanUser);
   } else if (pilihanUser === "orang" && pilihanComputer === "semut") {
-    alert("Anda menang! komputer memilih : " + pilihanComputer)
+    alert("Anda menang! komputer memilih : " + pilihanComputer + "\nKamu memilih :" + pilihanUser)
   } else if (pilihanUser === pilihanComputer) {
-    alert("Seri!");
+    alert("Seri! komputer memilih : " + pilihanComputer + "\nKamu memilih :" + pilihanUser);
   } else {
-    alert("Anda kalah komputer memilih :" + pilihanComputer);
+    alert("Anda kalah komputer memilih :" + pilihanComputer + "\nKamu memilih :" + pilihanUser);
   }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" onclick="aksi('tampilkan','teks'); return false">Tampilkan</a>
+    <a href="#" onclick="aksi('sembunyikan','teks')">Sembunyikan</a>
+
+    <p id="teks" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, maxime!</p>
+
+    <script>
+        function aksi(aksi, id){
+            if (aksi == "tampilkan") {
+            document.getElementById(id).style.display = "block";
+        }else if (aksi =="sembunyikan"){
+            document.getElementById(id).style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>

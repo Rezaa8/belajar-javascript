@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pilih Jalan</h1>
+    <form action="">
+        <select name="linkSaya" id="linkSaya" onchange="mylink()">
+            <option value="">Pilih Link</option>
+            <option value="https://www.instagram.com/eejjaa_8">instagram</option>
+        </select>
+    </form>
+
+    <script>
+        function mylink() {
+        var link = document.getElementById('linkSaya').value;
+        
+        document.location.href = link;
+       }
+    </script>
+</body>
+</html>
